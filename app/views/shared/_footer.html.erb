@@ -4,15 +4,25 @@
   </h2>
   <div clss='footer-navigate'>
     <ul class='nav'>
+    <% if user_signed_in? %>
+
+    <li class='navi-list'>
+      <%= link_to "#{current_user.shop_name}のマイページ", "", class:"user-link" %>
+    </li>
+
+    <li class='navi-list'>
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"user-link" %>
+    </li>
+
+    <% else %>
     <li class='navi-list'>
       <%= link_to '新規登録', new_user_registration_path, class:"user-link" %>
     </li>
     <li class='navi-list'>
       <%= link_to 'ログイン', new_user_session_path, class:"user-link" %>
     </li>
-    <li class='navi-list'>
-      <%= link_to 'ログアウト', destroy_user_session_path, class:"user-link" %>
-    </li>
+    <% end %>
+    
     </ul> 
   </div>
 </footer>
