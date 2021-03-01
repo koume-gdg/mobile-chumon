@@ -4,9 +4,15 @@
   </h2>
   <div clss='footer-navigate'>
     <ul class='nav'>
-    <li class='navi-list'>新規登録</li>
-    <li class='navi-list'>ログイン</li>
-    <li class='navi-list'>ログアウト</li>
-    </ul>
+    <li class='navi-list'>
+      <%= link_to '新規登録', new_user_registration_path, class:"user-link" %>
+    </li>
+    <li class='navi-list'>
+      <%= link_to 'ログイン', new_user_session_path, class:"user-link" %>
+    </li>
+    <li class='navi-list'>
+      ログアウト
+    </li>
+    </ul> 
   </div>
 </footer>
