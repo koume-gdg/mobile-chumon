@@ -1,0 +1,31 @@
+footer{
+  background-color: #292929;
+  padding: 5px;
+  text-align: right;
+}
+
+ul{
+  list-style: none;
+  color: white;
+  justify-content: flex-end;
+  display:flex;
+
+}
+
+li{
+  border: solid 1px white;
+  width: 100px;
+  margin: 10px 20px;
+  
+}
+
+.nav{
+  display: flex;
+  text-align: center;
+}
+
+.footer-message{
+  color: white;
+  border-bottom: solid 1px white;
+  
+}

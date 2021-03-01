@@ -1,1 +1,36 @@
-user index
+<%= render "shared/header" %>
+
+<div class='main'>
+  <div class='service-explain'>
+    <%= image_tag("smartphone1.png", class:"phone-image") %>
+
+    <h2 class='explain-text'>
+      スマホからのご注文を<br>お待ちしています！
+    <br><br>
+      店員を呼ばずにスマホから
+    <br>
+      ご注文、お支払いいただけます
+    </h2>
+  </div>
+
+  <div class='contetns'>
+  <h1 class='title'>
+    利用できる店舗一覧
+  </h1>
+
+  <ul class='item-lists'>
+    <%# @items.each do |item| %>
+        <li class='list'>
+          <%= link_to '#' do %>
+           <div class='item-img-content'>
+             <%#= image_tag item.image, class: "item-img" %>
+           </div>
+          <% end %>
+        </li>
+     <%# end %>
+    </ul>
+
+  </div>
+</div>
+
+<%= render "shared/footer" %>
