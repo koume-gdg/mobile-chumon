@@ -19,15 +19,14 @@
   </h1>
 
   <ul class='item-lists'>
-    <%# @items.each do |item| %>
+    <% @users.each do |user| %>
         <li class='list'>
           <%= link_to '#' do %>
-           <div class='item-img-content'>
-             <%#= image_tag item.image, class: "item-img" %>
-           </div>
+          <%= user.shop_city %>
+          <%= user.shop_name %>
           <% end %>
         </li>
-     <%# end %>
+     <% end %>
     </ul>
 
   </div>
