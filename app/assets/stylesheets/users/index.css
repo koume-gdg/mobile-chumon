@@ -22,3 +22,20 @@
   margin:auto;
 }
 
+.shop-lists{
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+
+.list{
+  text-align: center;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  
+}
+
+.shop-info{
+  display: inline-block;
+}

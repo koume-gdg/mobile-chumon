@@ -18,12 +18,16 @@
     利用できる店舗一覧
   </h1>
 
-  <ul class='item-lists'>
+  <ul class='shop-lists'>
     <% @users.each do |user| %>
         <li class='list'>
           <%= link_to '#' do %>
-          <%= user.shop_city %>
-          <%= user.shop_name %>
+            <div class='shop-info'>
+              <h3><%= user.shop_city %></h3>
+            </div>
+            <div class='shop-info'>
+              <h3><%= user.shop_name %></h3>
+            </div>
           <% end %>
         </li>
      <% end %>
