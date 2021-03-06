@@ -21,7 +21,7 @@
   <ul class='shop-lists'>
     <% @users.each do |user| %>
         <li class='list'>
-          <%= link_to '#' do %>
+          <%= link_to user_path(user.id) do %>
             <div class='shop-info'>
               <h3><%= user.shop_city %></h3>
             </div>
