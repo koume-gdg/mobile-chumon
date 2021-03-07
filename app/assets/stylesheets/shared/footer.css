@@ -1,7 +1,8 @@
-footer{
+.top-page-footer{
   background-color: #292929;
   padding: 5px;
   text-align: right;
+  height: 150px;
 }
 
 ul{
