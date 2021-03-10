@@ -1,1 +1,16 @@
-new
+<%= render "shared/header" %>
+
+<%= form_with model:@menu, local: true do |f| %>
+<%#= render 'shared/error_messages', model: f.object %>
+<div class="menu-name">
+  名前
+  <%= f.text_field :name%>
+</div>
+<div class="menu-name">
+  値段
+  <%= f.text_field :price%>
+</div>
+<div class="sell-btn-contents">
+      <%= f.submit "出品する" ,class:"sell-btn" %>
+<% end %>
+<%= render "shared/footer" %>

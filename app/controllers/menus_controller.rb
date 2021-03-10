@@ -9,7 +9,8 @@ class MenusController < ApplicationController
   def create
     @menu = Menu.new(menu_params)
     if @menu.save
-      redirect_to munu_path
+      redirect_to action: :index
+
     else
       render :new
     end
